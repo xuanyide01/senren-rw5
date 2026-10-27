@@ -41,6 +41,15 @@
 
 本轮另修了一处字形渲染问题：设备上的 FreeType 无法执行 CFF 全局子程序调用，导致「奸」等字形显示为空框；构建字体时改为 `desubroutinize` 并去掉 hint，字形自包含后恢复正常（字体 845,040 → 706,108 字节）。
 
+## 版本与开发者
+
+| 版本 | 范围 | 主要实现 |
+| --- | --- | --- |
+| 0.1.0 – 0.1.9 | 基础版剧情、阅读框架、标题与菜单、OP、存档、字号与安全区 | OpenAI Codex |
+| 0.1.10 起 | 完整版正篇与全部 CG、图库对齐、后日谈入口、字形渲染修复 | DeepSeek Harness |
+
+0.1.9 是 Codex 交付的最后正式版本（安装包 24,935,441 字节），其源码与安装包见 Releases 的 v0.1.9。0.1.10 起的工作在交接文档的基础上由 DeepSeek Harness 完成。
+
 ## 构建与来源
 
 ```
@@ -63,9 +72,9 @@ python tools/audit-package.py
 
 ## 当前界面预览
 
-| 标题 | CG 鉴赏 | 后日谈 |
+| 标题 | 后日谈 | 正文渲染 |
 | --- | --- | --- |
-| ![标题](docs/screenshots/v0.1.13/title.png) | ![CG 鉴赏](docs/screenshots/v0.1.13/cg-gallery.png) | ![后日谈](docs/screenshots/v0.1.13/after-story-locked.png) |
+| ![标题](docs/screenshots/v0.1.13/title.png) | ![后日谈](docs/screenshots/v0.1.13/after-story-locked.png) | ![正文](docs/screenshots/v0.1.13/text-render-fix.png) |
 
 ## 联系方式
 
