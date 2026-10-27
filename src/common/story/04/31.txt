@@ -1,0 +1,1 @@
+[{"speaker":"将臣","text":"「为什么会出现兽耳！？」","art":{"background":"/common/images/21/02.jpg","sprites":[{"src":"/common/images/06/04.png","width":194,"height":310,"left":119,"top":0,"opacity":1.0,"patch":"/common/faces/04/07.png","patchWidth":43,"patchHeight":34,"patchLeft":200,"patchTop":39,"patchAtlasWidth":292,"patchAtlasHeight":292,"patchImageLeft":-146,"patchImageTop":-146}]}}]

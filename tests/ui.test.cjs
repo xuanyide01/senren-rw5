@@ -1,0 +1,37 @@
+const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
+const root=path.resolve(__dirname,'..');
+function make(options={}){const map=new Map(),timers=new Map();let serial=0,time=0;const plays=[],waiting=[];const box={console:{log(){},error(){}},graph:null,storage:{get(o){if(options.deferSettings&&o.key.endsWith('settings_v1')){waiting.push(o);return;}o.success(map.get(o.key)??o.default);},set(o){map.set(o.key,o.value);o.success?.();}},file:{readText(o){o.success({text:fs.readFileSync(path.join(root,'src',o.uri),'utf8')});}},prompt:{showToast(){}},audio:{stop(){this.onstop?.();},play(){plays.push(this.src);this.onplay?.();}},setTimeout(f,ms){const id=++serial;timers.set(id,{f,at:time+ms});return id;},clearTimeout(id){timers.delete(id);},Date:{now(){return time;}}};
+let code=fs.readFileSync(path.join(root,'src/common/graph.js'),'utf8').replace('export const graph=','globalThis.graph=');code+='\n'+fs.readFileSync(path.join(root,'src/common/engine.js'),'utf8').replace(/export \{[^}]+\};/,'');code+='\n'+fs.readFileSync(path.join(root,'src/common/auto-reader.js'),'utf8').replace(/export /g,'');code+='\n'+fs.readFileSync(path.join(root,'src/common/title-music.js'),'utf8').replace(/^import[^\n]+\n/gm,'').replace(/export /g,'');code+='\n'+fs.readFileSync(path.join(root,'src/common/opening.js'),'utf8').replace(/export /g,'');const text=fs.readFileSync(path.join(root,'src/pages/index/index.ux'),'utf8').match(/<script>([\s\S]*?)<\/script>/)[1].replace(/^import[^\n]+\n/gm,'').replace('export default','globalThis.page=');vm.runInNewContext(code+'\n'+text,box);const p=box.page;Object.assign(p,JSON.parse(JSON.stringify(p.private)));p.$element=()=>({scrollTo(){}});p.$app={exit(){throw Error('REDMI must not expose an exit button');}};p.onInit();return {p,map,timers,plays,replySettings(soundEnabled){const o=waiting.shift();o.success(JSON.stringify({soundEnabled}));},advance(ms){const end=time+ms;let guard=0;for(;;){const list=[...timers.entries()].filter(([id,t])=>t.at<=end).sort((a,b)=>a[1].at-b[1].at);if(!list.length)break;const[id,t]=list[0];time=t.at;timers.delete(id);t.f();if(++guard>200000)throw Error('Timer loop');}time=end;}};}
+test('30 save slots support explicit selection, overwrite and restoring exact position',()=>{const {p}=make();p.startNew();p.advance();const wanted=p.session.index;p.saveGame();p.selectSlot(29);assert.equal(p.mode,'play');p.advance();p.loadGame();assert.equal(p._slotData.length,30);p.selectSlot(29);assert.equal(p.session.index,wanted);p.saveGame();p.selectSlot(29);assert.equal(p.mode,'overwrite');p.confirmOverwrite();assert.equal(p.storageBusy,false);p.onDestroy();});
+test('first-page route changes and back use distinct native list keys',()=>{const{p}=make();p.openDirectory();const before=p.directoryRows.map(x=>x.id);p.pickDirectory(2);assert.equal(p.directoryTitle,'章节选择');assert.ok(p.directoryRows[0].title);assert.ok(p.directoryRows.every(x=>!before.includes(x.id)));p.backDirectory();assert.equal(p.directoryTitle,'路线选择');assert.equal(p.directoryRows[0].title,'共通剧情');p.onDestroy();});
+test('text taps advance while a drag does not, and line wrapping preserves Latin spacing',()=>{const{p}=make();p.startNew();const before=p.session.index;p.dialogueTouchStart({touches:[{clientX:100,clientY:400}]});p.dialogueTouchEnd();p.dialogueTap();assert.equal(p.session.index,before+1);p.dialogueTouchStart({touches:[{clientX:100,clientY:400}]});p.dialogueTouchMove({touches:[{clientX:100,clientY:330}]});p.dialogueTouchEnd();p.dialogueTap();assert.equal(p.session.index,before+1);p.displayText='El Psy Kongroo / Senren Banka';p.updateLines();assert.equal(p.dialogueLines.map(x=>x.text).join(''),p.displayText);p.onDestroy();});
+test('OP has bounded timers, pauses in background, is skippable and EXTRA does not change story',()=>{const{p,timers,advance}=make();p.startNew();const before=JSON.stringify(p.session);p.openExtra();p.playExtraOpening();assert.equal(p.mode,'op');advance(1000);assert.ok(p.openingSrc);p.onHide();assert.equal(timers.size,0);p.onShow();advance(500);p.finishOpening();assert.equal(p.mode,'extra');assert.equal(JSON.stringify(p.session),before);p.onDestroy();assert.equal(timers.size,0);});
+test('no REDMI title exit button and all title buttons use original artwork',()=>{const t=fs.readFileSync(path.join(root,'src/pages/index/index.ux'),'utf8').split('<script>')[0];assert.equal(/onclick="exitApplication"/.test(t),false);for(const n of ['start','load','flowchart','extra','system'])assert.ok(t.includes('/common/ui/'+n+'.png'));});
+
+test('title children retain music and normal returns never use role recordings or private caches',()=>{const{p,plays}=make();assert.deepEqual(plays,['/common/title-original.opus']);p.openConfig();p.toTitle();p.openExtra();p.toTitle();assert.equal(plays.length,1);p.startNew();p.showMenu();p.toTitle();assert.equal(plays.length,2);assert.ok(plays.every(x=>x==='/common/title-original.opus'));p.onDestroy();});
+test('mute only stops this player and enabling sound resumes the plain title song',()=>{const{p,plays}=make();p.openConfig();p.toggleSound();const n=plays.length;p.toTitle();p.startNew();p.toTitle();assert.equal(plays.length,n);p.openConfig();p.toggleSound();p.toTitle();assert.equal(plays.at(-1),'/common/title-original.opus');p.onDestroy();});
+
+test('startup waits for stored sound settings even when progress loads first',()=>{for(const enabled of [false,true]){const m=make({deferSettings:true});assert.equal(m.plays.length,0);m.p.onShow();assert.equal(m.plays.length,0);m.replySettings(enabled);assert.equal(m.plays.length,enabled?1:0);m.p.syncMusic();m.p.onShow();assert.equal(m.plays.length,enabled?1:0);m.p.onDestroy();}});
+
+test('typed Murasame 6-2 refreshes native cached rows and keeps paragraph geometry stable',()=>{
+ const frame=JSON.parse(fs.readFileSync(path.join(root,'src/common/story/09/19.txt'),'utf8'))[0];
+ assert.equal(frame.text.includes('\\n'),false);assert.equal(frame.text.split('\n').length,3);
+ for(const size of [24,28]){
+  const m=make(),p=m.p,cache=new Map();p.session.node='n310';p.session.index=0;p.fontSize=size;p.textSpeed=30;p.showFrame(frame);
+  const height=p.dialogueHeight,rows=p.dialogueLines.length;let previousLength=0;
+  for(let i=0;i<frame.text.length+1;i++){
+   // Native keyed rows may retain their original text until their key changes.
+   for(const row of p.dialogueLines)if(!cache.has(row.id))cache.set(row.id,row.text);
+   assert.equal(p.dialogueLines.map(row=>cache.get(row.id)).join(''),p.dialogueLines.map(row=>row.text).join(''));
+   assert.equal(p.dialogueLines.length,rows);assert.equal(p.dialogueHeight,height);
+   assert.ok(p.displayText.length>=previousLength);previousLength=p.displayText.length;m.advance(30);
+  }
+  assert.equal(p.displayText,frame.text);assert.equal(p.timer,null);
+  p.showFrame(frame);p.advance();assert.equal(p.displayText,frame.text);m.advance(3000);assert.equal(p.displayText,frame.text);
+  p.showMenu();const beforeFont=p.dialogueHeight;p.toggleFont();p.resume();
+  assert.equal(p._layoutFont,p.fontSize);assert.notEqual(p.dialogueHeight,beforeFont);
+  assert.equal(p.dialogueLines.map(row=>row.text).join(''),frame.text.replace(/\n/g,''));
+  p.onDestroy();assert.equal(m.timers.size,0);
+ }
+});
+
