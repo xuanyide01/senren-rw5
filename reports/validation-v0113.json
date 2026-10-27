@@ -1,0 +1,132 @@
+{
+  "version": "0.1.13",
+  "versionCode": 14,
+  "package": "com.codex.senren.rw5",
+  "bytes": 24207073,
+  "sha256": "47dd4c8452a3e3e41670a5f1c015b6afff377c89742728cb84486b2dd8f4905c",
+  "packageAudit": {
+    "entries": 4068,
+    "expandedBytes": 40025835,
+    "signedFiles": 3876,
+    "zipCRCValid": true,
+    "outerSignatureValid": true,
+    "innerSignatureValid": true,
+    "allFileDigestsValid": true,
+    "decodedImages": 3052,
+    "fontCoverageStrings": 240044,
+    "galleryGroups": 122,
+    "galleryImages": 1479
+  },
+  "story": {
+    "scripts": 92,
+    "nodes": 869,
+    "newNodes": 368,
+    "texts": 55726,
+    "choices": 97,
+    "endings": 7,
+    "chunks": 815,
+    "maxChunkBytes": 28670
+  },
+  "images": {
+    "uniqueFiles": 1721,
+    "jpeg": true,
+    "jpegQuality": 22,
+    "faceAtlases": 672,
+    "atlasColors": 200
+  },
+  "source": {
+    "adultXp3": "G:/SteamLibrary/steamapps/common/SenrenBanka/adult.xp3",
+    "adult2Xp3": "G:/SteamLibrary/steamapps/common/SenrenBanka/adult2.xp3",
+    "identityWithIPath": true,
+    "archivesReadOnly": true
+  },
+  "tests": {
+    "total": 21,
+    "passed": 21
+  },
+  "fonts": {
+    "file": "senren-text.otf",
+    "bytes": 706108,
+    "codepoints": 3542,
+    "desubroutinized": true,
+    "hinting": false,
+    "globalSubrs": 0,
+    "fix": "CFF global subroutine calls were unrenderable on the watch FreeType"
+  },
+  "afterStories": [
+    {
+      "title": "芳乃后日谈",
+      "requires": "yoshino"
+    },
+    {
+      "title": "茉子后日谈",
+      "requires": "mako"
+    },
+    {
+      "title": "丛雨后日谈",
+      "requires": "murasame"
+    },
+    {
+      "title": "蕾娜后日谈",
+      "requires": "lena"
+    },
+    {
+      "title": "小春后日谈",
+      "requires": "koharu"
+    },
+    {
+      "title": "芦花后日谈",
+      "requires": "roka"
+    }
+  ],
+  "cgSources": {
+    "uncensoredArchive": "adult2.xp3 (74 PIMG)",
+    "decensorPatch": "I:/galgame/补丁/千恋万花/去码补丁/unencrypted (52 PIMG override)",
+    "decensoredRigs": 52,
+    "appliedPolicy": "patch file wins over adult2 when the rig name matches"
+  },
+  "deviceLimits": {
+    "installEntryLimitObserved": "4156 entries install, 4177 fail with rpkpackage -19",
+    "storyChunkBytes": 28672,
+    "packageEntries": 4068
+  },
+  "sizeTradeoffs": {
+    "jpegQualityDown": [
+      36,
+      22
+    ],
+    "atlasColorsDown": [
+      256,
+      200
+    ],
+    "titleMusic": [
+      "193k opus 5,683,641 B",
+      "32k opus 914,054 B"
+    ]
+  },
+  "emulator": {
+    "device": "SenrenSafeFinal019-432x514",
+    "home": "D:/DSH/work/port/environment-adult-v020",
+    "install": "success 0",
+    "titleRendered": true,
+    "storyTextRendered": true,
+    "backgroundRendered": true,
+    "portraitRendered": true,
+    "cgGalleryGroups": 122,
+    "uncensoredCgOpened": "EV103 group viewer 1/5",
+    "saveLoadFromV019Slot": true,
+    "menuAndSettings": true,
+    "routeAndChapterSelect": true,
+    "capturedAt": "2026-10-27 Asia/Shanghai"
+  },
+  "notVerified": [
+    "physical REDMI Watch 5",
+    "save migration in every affected scene",
+    "H-scene end-to-end playthrough on device"
+  ],
+  "notIncluded": [
+    "adult voice ogg",
+    "ending movies",
+    "role voice system"
+  ]
+}
