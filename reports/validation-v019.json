@@ -1,0 +1,740 @@
+{
+  "version": "0.1.9",
+  "result": "passed",
+  "sha256": "5c0252d414263d9251afc10e561fe66f44d6001778c3f4f73637afc98a684e5b",
+  "physicalDeviceTested": false,
+  "checks": {
+    "installed-final.json": {
+      "result": "passed",
+      "version": "0.1.9",
+      "sha256": "5c0252d414263d9251afc10e561fe66f44d6001778c3f4f73637afc98a684e5b",
+      "installedFilesMatchPackage": [
+        "pages/index/index.js",
+        "manifest-watch.json",
+        "common/title_bg.png",
+        "common/title_panel.png",
+        "common/title_logo.png",
+        "common/title_divider.png",
+        "common/title-original.opus",
+        "common/opening/frames/0000.jpg",
+        "common/opening/frames/0324.jpg",
+        "common/opening/frames/0647.jpg",
+        "common/opening/op.mp3"
+      ],
+      "physicalDeviceTested": false
+    },
+    "version-changes-v019.json": {
+      "result": "passed",
+      "version": "0.1.9",
+      "sha256": "5c0252d414263d9251afc10e561fe66f44d6001778c3f4f73637afc98a684e5b",
+      "baselineVersion": "0.1.8",
+      "baselineSha256": "5a5b117eea0bf4367c88a4555bd5c33eb9e14243ba59c80d702276f6915767b4",
+      "unchangedCommonAssets": 2985,
+      "changedStoryChunks": [
+        "common/story/00/00.txt",
+        "common/story/00/09.txt",
+        "common/story/00/12.txt",
+        "common/story/00/22.txt",
+        "common/story/00/47.txt",
+        "common/story/01/01.txt",
+        "common/story/01/09.txt",
+        "common/story/01/12.txt",
+        "common/story/01/16.txt",
+        "common/story/01/29.txt",
+        "common/story/01/35.txt",
+        "common/story/01/38.txt",
+        "common/story/01/40.txt",
+        "common/story/01/43.txt",
+        "common/story/01/44.txt",
+        "common/story/01/45.txt",
+        "common/story/01/46.txt",
+        "common/story/02/02.txt",
+        "common/story/02/08.txt",
+        "common/story/02/20.txt",
+        "common/story/02/24.txt",
+        "common/story/02/25.txt",
+        "common/story/02/30.txt",
+        "common/story/02/42.txt",
+        "common/story/03/07.txt",
+        "common/story/04/35.txt",
+        "common/story/05/43.txt",
+        "common/story/07/08.txt",
+        "common/story/07/18.txt",
+        "common/story/07/37.txt",
+        "common/story/08/02.txt",
+        "common/story/08/22.txt",
+        "common/story/09/01.txt",
+        "common/story/09/16.txt",
+        "common/story/09/19.txt",
+        "common/story/10/10.txt",
+        "common/story/11/02.txt",
+        "common/story/11/04.txt",
+        "common/story/11/20.txt",
+        "common/story/11/44.txt",
+        "common/story/12/01.txt",
+        "common/story/12/14.txt",
+        "common/story/12/34.txt",
+        "common/story/12/42.txt",
+        "common/story/13/01.txt",
+        "common/story/13/14.txt",
+        "common/story/13/26.txt",
+        "common/story/13/27.txt",
+        "common/story/13/30.txt",
+        "common/story/13/36.txt",
+        "common/story/13/37.txt",
+        "common/story/13/40.txt",
+        "common/story/14/01.txt",
+        "common/story/14/07.txt",
+        "common/story/14/11.txt",
+        "common/story/14/12.txt",
+        "common/story/14/14.txt",
+        "common/story/14/28.txt",
+        "common/story/14/40.txt",
+        "common/story/15/03.txt"
+      ],
+      "changedTextRecords": 67,
+      "decodedNewlineMarkers": 72,
+      "storyGraphAndChoiceEffectsAndSaveFormatUnchanged": true,
+      "allArtFontsAndMediaByteExact": true,
+      "openingClockAudioControllerAndViewportUnchanged": true,
+      "sidesPx": 32,
+      "topPx": 26,
+      "bottomPx": 24,
+      "dialogueWidth": 368,
+      "typingLayoutFromFullSentence": true,
+      "typingRowKeyIncludesVisibleText": true,
+      "inheritedMediaValidation": {
+        "media.json": {
+          "result": "passed",
+          "sha256": "5a5b117eea0bf4367c88a4555bd5c33eb9e14243ba59c80d702276f6915767b4",
+          "largeFontLongTextCaptured": true,
+          "dragDoesNotAdvance": true,
+          "cgVariantsCaptured": true,
+          "completeOpeningOriginalDurationMs": 108000,
+          "completeOpeningWaitMs": 110370,
+          "extraNaturalReturnsWithoutStoryAdvance": true,
+          "titleMusicResumes": true,
+          "openingAssetGain": 0.5,
+          "titleAssetGain": 0.3,
+          "systemVolumeWrites": false,
+          "physicalDeviceTested": false
+        },
+        "title-loops.json": {
+          "result": "passed",
+          "sha256": "5a5b117eea0bf4367c88a4555bd5c33eb9e14243ba59c80d702276f6915767b4",
+          "guardedLoops": 2,
+          "durationMs": 481489,
+          "physicalDeviceTested": false,
+          "samples": [
+            {
+              "elapsed": 20089,
+              "loops": 0,
+              "audio": {
+                "playing": true,
+                "track": "title",
+                "loop": false,
+                "revision": 12,
+                "position": 22.42,
+                "duration": 235.033,
+                "updatedAt": 1793074545851,
+                "source": "/common/title-original.opus",
+                "role": "",
+                "gain": 1,
+                "backend": "browser",
+                "hostAudioDisabled": true
+              },
+              "memory": "      total       used       free    maxused    maxfree  nused  nfree name\r\n  130222076   12869544  117352532   13275416  115628688   1055    322 Umem\r\n"
+            },
+            {
+              "elapsed": 40144,
+              "loops": 0,
+              "audio": {
+                "playing": true,
+                "track": "title",
+                "loop": false,
+                "revision": 12,
+                "position": 42.46,
+                "duration": 235.033,
+                "updatedAt": 1793074565878,
+                "source": "/common/title-original.opus",
+                "role": "",
+                "gain": 1,
+                "backend": "browser",
+                "hostAudioDisabled": true
+              },
+              "memory": "      total       used       free    maxused    maxfree  nused  nfree name\r\n  130222076   12875720  117346356   13275416  115628688   1055    321 Umem\r\n"
+            },
+            {
+              "elapsed": 60195,
+              "loops": 0,
+              "audio": {
+                "playing": true,
+                "track": "title",
+                "loop": false,
+                "revision": 12,
+                "position": 62.5,
+                "duration": 235.033,
+                "updatedAt": 1793074585905,
+                "source": "/common/title-original.opus",
+                "role": "",
+                "gain": 1,
+                "backend": "browser",
+                "hostAudioDisabled": true
+              },
+              "memory": "      total       used       free    maxused    maxfree  nused  nfree name\r\n  130222076   12875536  117346540   13275416  115628688   1055    322 Umem\r\n"
+            },
+            {
+              "elapsed": 80246,
+              "loops": 0,
+              "audio": {
+                "playing": true,
+                "track": "title",
+                "loop": false,
+                "revision": 12,
+                "position": 82.5,
+                "duration": 235.033,
+                "updatedAt": 1793074605936,
+                "source": "/common/title-original.opus",
+                "role": "",
+                "gain": 1,
+                "backend": "browser",
+                "hostAudioDisabled": true
+              },
+              "memory": "      total       used       free    maxused    maxfree  nused  nfree name\r\n  130222076   12875488  117346588   13275416  115628688   1055    321 Umem\r\n"
+            },
+            {
+              "elapsed": 100299,
+              "loops": 0,
+              "audio": {
+                "playing": true,
+                "track": "title",
+                "loop": false,
+                "revision": 12,
+                "position": 102.54,
+                "duration": 235.033,
+                "updatedAt": 1793074625966,
+                "source": "/common/title-original.opus",
+                "role": "",
+                "gain": 1,
+                "backend": "browser",
+                "hostAudioDisabled": true
+              },
+              "memory": "      total       used       free    maxused    maxfree  nused  nfree name\r\n  130222076   12875536  117346540   13275416  115628688   1055    322 Umem\r\n"
+            },
+            {
+              "elapsed": 120355,
+              "loops": 0,
+              "audio": {
+                "playing": true,
+                "track": "title",
+                "loop": false,
+                "revision": 12,
+                "position": 122.58,
+                "duration": 235.033,
+                "updatedAt": 1793074645997,
+                "source": "/common/title-original.opus",
+                "role": "",
+                "gain": 1,
+                "backend": "browser",
+                "hostAudioDisabled": true
+              },
+              "memory": "      total       used       free    maxused    maxfree  nused  nfree name\r\n  130222076   12876200  117345876   13275416  115628688   1057    322 Umem\r\n"
+            },
+            {
+              "elapsed": 140403,
+              "loops": 0,
+              "audio": {
+                "playing": true,
+                "track": "title",
+                "loop": false,
+                "revision": 12,
+                "position": 142.58,
+                "duration": 235.033,
+                "updatedAt": 1793074666024,
+                "source": "/common/title-original.opus",
+                "role": "",
+                "gain": 1,
+                "backend": "browser",
+                "hostAudioDisabled": true
+              },
+              "memory": "      total       used       free    maxused    maxfree  nused  nfree name\r\n  130222076   12876192  117345884   13275416  115628688   1057    322 Umem\r\n"
+            },
+            {
+              "elapsed": 160457,
+              "loops": 0,
+              "audio": {
+                "playing": true,
+                "track": "title",
+                "loop": false,
+                "revision": 12,
+                "position": 162.62,
+                "duration": 235.033,
+                "updatedAt": 1793074686059,
+                "source": "/common/title-original.opus",
+                "role": "",
+                "gain": 1,
+                "backend": "browser",
+                "hostAudioDisabled": true
+              },
+              "memory": "      total       used       free    maxused    maxfree  nused  nfree name\r\n  130222076   12876152  117345924   13275416  115628688   1057    323 Umem\r\n"
+            },
+            {
+              "elapsed": 180509,
+              "loops": 0,
+              "audio": {
+                "playing": true,
+                "track": "title",
+                "loop": false,
+                "revision": 12,
+                "position": 182.66,
+                "duration": 235.033,
+                "updatedAt": 1793074706086,
+                "source": "/common/title-original.opus",
+                "role": "",
+                "gain": 1,
+                "backend": "browser",
+                "hostAudioDisabled": true
+              },
+              "memory": "      total       used       free    maxused    maxfree  nused  nfree name\r\n  130222076   12876192  117345884   13275416  115628688   1057    322 Umem\r\n"
+            },
+            {
+              "elapsed": 200562,
+              "loops": 0,
+              "audio": {
+                "playing": true,
+                "track": "title",
+                "loop": false,
+                "revision": 12,
+                "position": 202.66,
+                "duration": 235.033,
+                "updatedAt": 1793074726116,
+                "source": "/common/title-original.opus",
+                "role": "",
+                "gain": 1,
+                "backend": "browser",
+                "hostAudioDisabled": true
+              },
+              "memory": "      total       used       free    maxused    maxfree  nused  nfree name\r\n  130222076   12876184  117345892   13275416  115628688   1057    321 Umem\r\n"
+            },
+            {
+              "elapsed": 220609,
+              "loops": 0,
+              "audio": {
+                "playing": true,
+                "track": "title",
+                "loop": false,
+                "revision": 12,
+                "position": 222.7,
+                "duration": 235.033,
+                "updatedAt": 1793074746147,
+                "source": "/common/title-original.opus",
+                "role": "",
+                "gain": 1,
+                "backend": "browser",
+                "hostAudioDisabled": true
+              },
+              "memory": "      total       used       free    maxused    maxfree  nused  nfree name\r\n  130222076   12876288  117345788   13275416  115628688   1057    321 Umem\r\n"
+            },
+            {
+              "elapsed": 240663,
+              "loops": 1,
+              "audio": {
+                "playing": true,
+                "track": "title",
+                "loop": false,
+                "revision": 13,
+                "position": 7.42,
+                "duration": 235.033,
+                "updatedAt": 1793074766113,
+                "source": "/common/title-original.opus",
+                "role": "",
+                "gain": 1,
+                "backend": "browser",
+                "hostAudioDisabled": true
+              },
+              "memory": "      total       used       free    maxused    maxfree  nused  nfree name\r\n  130222076   12852168  117369908   13275416  115628688   1057    318 Umem\r\n"
+            },
+            {
+              "elapsed": 260713,
+              "loops": 1,
+              "audio": {
+                "playing": true,
+                "track": "title",
+                "loop": false,
+                "revision": 13,
+                "position": 27.46,
+                "duration": 235.033,
+                "updatedAt": 1793074786146,
+                "source": "/common/title-original.opus",
+                "role": "",
+                "gain": 1,
+                "backend": "browser",
+                "hostAudioDisabled": true
+              },
+              "memory": "      total       used       free    maxused    maxfree  nused  nfree name\r\n  130222076   12876080  117345996   13275416  115628688   1057    320 Umem\r\n"
+            },
+            {
+              "elapsed": 280765,
+              "loops": 1,
+              "audio": {
+                "playing": true,
+                "track": "title",
+                "loop": false,
+                "revision": 13,
+                "position": 47.46,
+                "duration": 235.033,
+                "updatedAt": 1793074806169,
+                "source": "/common/title-original.opus",
+                "role": "",
+                "gain": 1,
+                "backend": "browser",
+                "hostAudioDisabled": true
+              },
+              "memory": "      total       used       free    maxused    maxfree  nused  nfree name\r\n  130222076   12876856  117345220   13275416  115628688   1059    319 Umem\r\n"
+            },
+            {
+              "elapsed": 300822,
+              "loops": 1,
+              "audio": {
+                "playing": true,
+                "track": "title",
+                "loop": false,
+                "revision": 13,
+                "position": 67.5,
+                "duration": 235.033,
+                "updatedAt": 1793074826200,
+                "source": "/common/title-original.opus",
+                "role": "",
+                "gain": 1,
+                "backend": "browser",
+                "hostAudioDisabled": true
+              },
+              "memory": "      total       used       free    maxused    maxfree  nused  nfree name\r\n  130222076   12876928  117345148   13275416  115628688   1059    317 Umem\r\n"
+            },
+            {
+              "elapsed": 320877,
+              "loops": 1,
+              "audio": {
+                "playing": true,
+                "track": "title",
+                "loop": false,
+                "revision": 13,
+                "position": 87.54,
+                "duration": 235.033,
+                "updatedAt": 1793074846240,
+                "source": "/common/title-original.opus",
+                "role": "",
+                "gain": 1,
+                "backend": "browser",
+                "hostAudioDisabled": true
+              },
+              "memory": "      total       used       free    maxused    maxfree  nused  nfree name\r\n  130222076   12877112  117344964   13275416  115628688   1059    318 Umem\r\n"
+            },
+            {
+              "elapsed": 340920,
+              "loops": 1,
+              "audio": {
+                "playing": true,
+                "track": "title",
+                "loop": false,
+                "revision": 13,
+                "position": 107.54,
+                "duration": 235.033,
+                "updatedAt": 1793074866267,
+                "source": "/common/title-original.opus",
+                "role": "",
+                "gain": 1,
+                "backend": "browser",
+                "hostAudioDisabled": true
+              },
+              "memory": "      total       used       free    maxused    maxfree  nused  nfree name\r\n  130222076   12876752  117345324   13275416  115628688   1059    320 Umem\r\n"
+            },
+            {
+              "elapsed": 360986,
+              "loops": 1,
+              "audio": {
+                "playing": true,
+                "track": "title",
+                "loop": false,
+                "revision": 13,
+                "position": 127.58,
+                "duration": 235.033,
+                "updatedAt": 1793074886298,
+                "source": "/common/title-original.opus",
+                "role": "",
+                "gain": 1,
+                "backend": "browser",
+                "hostAudioDisabled": true
+              },
+              "memory": "      total       used       free    maxused    maxfree  nused  nfree name\r\n  130222076   12876920  117345156   13275416  115628688   1059    317 Umem\r\n"
+            },
+            {
+              "elapsed": 381029,
+              "loops": 1,
+              "audio": {
+                "playing": true,
+                "track": "title",
+                "loop": false,
+                "revision": 13,
+                "position": 148.62,
+                "duration": 235.033,
+                "updatedAt": 1793074907337,
+                "source": "/common/title-original.opus",
+                "role": "",
+                "gain": 1,
+                "backend": "browser",
+                "hostAudioDisabled": true
+              },
+              "memory": "      total       used       free    maxused    maxfree  nused  nfree name\r\n  130222076   12876928  117345148   13275416  115628688   1059    317 Umem\r\n"
+            },
+            {
+              "elapsed": 401105,
+              "loops": 1,
+              "audio": {
+                "playing": true,
+                "track": "title",
+                "loop": false,
+                "revision": 13,
+                "position": 168.66,
+                "duration": 235.033,
+                "updatedAt": 1793074927390,
+                "source": "/common/title-original.opus",
+                "role": "",
+                "gain": 1,
+                "backend": "browser",
+                "hostAudioDisabled": true
+              },
+              "memory": "      total       used       free    maxused    maxfree  nused  nfree name\r\n  130222076   12876928  117345148   13275416  115628688   1059    318 Umem\r\n"
+            },
+            {
+              "elapsed": 421195,
+              "loops": 1,
+              "audio": {
+                "playing": true,
+                "track": "title",
+                "loop": false,
+                "revision": 13,
+                "position": 187.82,
+                "duration": 235.033,
+                "updatedAt": 1793074946555,
+                "source": "/common/title-original.opus",
+                "role": "",
+                "gain": 1,
+                "backend": "browser",
+                "hostAudioDisabled": true
+              },
+              "memory": "      total       used       free    maxused    maxfree  nused  nfree name\r\n  130222076   12876928  117345148   13275416  115628688   1059    317 Umem\r\n"
+            },
+            {
+              "elapsed": 441276,
+              "loops": 1,
+              "audio": {
+                "playing": true,
+                "track": "title",
+                "loop": false,
+                "revision": 13,
+                "position": 207.98,
+                "duration": 235.033,
+                "updatedAt": 1793074966715,
+                "source": "/common/title-original.opus",
+                "role": "",
+                "gain": 1,
+                "backend": "browser",
+                "hostAudioDisabled": true
+              },
+              "memory": "      total       used       free    maxused    maxfree  nused  nfree name\r\n  130222076   12877896  117344180   13275416  115628688   1061    317 Umem\r\n"
+            },
+            {
+              "elapsed": 461348,
+              "loops": 1,
+              "audio": {
+                "playing": true,
+                "track": "title",
+                "loop": false,
+                "revision": 13,
+                "position": 228.18,
+                "duration": 235.033,
+                "updatedAt": 1793074986897,
+                "source": "/common/title-original.opus",
+                "role": "",
+                "gain": 1,
+                "backend": "browser",
+                "hostAudioDisabled": true
+              },
+              "memory": "      total       used       free    maxused    maxfree  nused  nfree name\r\n  130222076   12877576  117344500   13275416  115628688   1061    316 Umem\r\n"
+            },
+            {
+              "elapsed": 481486,
+              "loops": 2,
+              "audio": {
+                "playing": true,
+                "track": "title",
+                "loop": false,
+                "revision": 14,
+                "position": 13.62,
+                "duration": 235.033,
+                "updatedAt": 1793075007714,
+                "source": "/common/title-original.opus",
+                "role": "",
+                "gain": 1,
+                "backend": "browser",
+                "hostAudioDisabled": true
+              },
+              "memory": "      total       used       free    maxused    maxfree  nused  nfree name\r\n  130222076   12860464  117361612   13275416  115628688   1061    319 Umem\r\n"
+            }
+          ]
+        },
+        "audio-scope.json": {
+          "result": "passed",
+          "version": "0.1.8",
+          "sha256": "5a5b117eea0bf4367c88a4555bd5c33eb9e14243ba59c80d702276f6915767b4",
+          "roleCallEvents": 0,
+          "cacheBuildEvents": 0,
+          "nativeSystemVolumeWrites": 0,
+          "nativeMuteWrites": 0,
+          "nativePolicySamples": 668,
+          "nativePolicyVolumes": [
+            5
+          ],
+          "observedSources": [
+            "/common/opening/op.mp3",
+            "/common/title-original.opus"
+          ],
+          "physicalDeviceTested": false
+        }
+      },
+      "inheritedValidationNote": "Complete 108s OP, sampled frame alignment and two guarded music loops were actually run on 0.1.8. They are inherited here through exact media/module/viewport equivalence; they were not rerun on 0.1.9.",
+      "physicalDeviceTested": false
+    },
+    "newline-fix-v019.json": {
+      "result": "passed",
+      "version": "0.1.9",
+      "counts": {
+        "runtime": {
+          "records": 67,
+          "markers": 72,
+          "files": 60
+        },
+        "intermediate": {
+          "records": 67,
+          "markers": 72,
+          "files": 43
+        }
+      },
+      "indicesAndChunkBoundariesPreserved": true,
+      "sha256": "5c0252d414263d9251afc10e561fe66f44d6001778c3f4f73637afc98a684e5b"
+    },
+    "package-audit.json": {
+      "file": "com.codex.senren.rw5.debug.0.1.9.rpk",
+      "version": "0.1.9",
+      "bytes": 24935441,
+      "expandedBytes": 39094406,
+      "entries": 3162,
+      "sha256": "5c0252d414263d9251afc10e561fe66f44d6001778c3f4f73637afc98a684e5b",
+      "certificateSha256": "4e8e1ee24968b0dad6d0956a7e14d848b38b22a203f39c389a45d8737bdc4585",
+      "zipCRCValid": true,
+      "outerSignatureValid": true,
+      "innerSignatureValid": true,
+      "allFileDigestsValid": true,
+      "signedFiles": 3050,
+      "commonFilesMatchSource": true,
+      "decodedImages": 2308,
+      "fontCoverageStrings": 205468,
+      "circularIcon": true,
+      "galleryGroups": 77,
+      "galleryImages": 634,
+      "physicalDeviceTested": false
+    },
+    "source-equivalence.json": {
+      "result": "passed",
+      "originalChineseTextRecordsCompared": 45186,
+      "choiceLabelsAndEffectsCompared": 19,
+      "sceneNodes": 501,
+      "sourceScope": "Steam data/scn/patch; excludes optional adult,adult2,patch_extra,unencrypted"
+    }
+  },
+  "native": {
+    "report.json": {
+      "result": "passed",
+      "version": "0.1.9",
+      "sha256": "5c0252d414263d9251afc10e561fe66f44d6001778c3f4f73637afc98a684e5b",
+      "installedSuccessfully": true,
+      "startGamePassed": true,
+      "textTapPassed": true,
+      "safeSkipStopsAtChoice": true,
+      "saveSlotsTested": [
+        1,
+        30
+      ],
+      "routeFirstPageAndBackCaptured": true,
+      "skipStopsAtOriginalOpening": true,
+      "openingTapSkipPassed": true,
+      "extraOpeningReturns": true,
+      "unifiedSoundTogglePassed": true,
+      "autoPlaybackAdvances": true,
+      "physicalDeviceTested": false,
+      "coldStartSlotsRestored": [
+        1,
+        30
+      ]
+    },
+    "title-check.json": {
+      "result": "passed",
+      "version": "0.1.9",
+      "sha256": "5c0252d414263d9251afc10e561fe66f44d6001778c3f4f73637afc98a684e5b",
+      "rightRegionInactive": true,
+      "allFiveLeftMenusOpen": true,
+      "physicalDeviceTested": false
+    },
+    "layout.json": {
+      "result": "passed",
+      "version": "0.1.9",
+      "sha256": "5c0252d414263d9251afc10e561fe66f44d6001778c3f4f73637afc98a684e5b",
+      "murasameChapter": "n310 / chapter 6-2 / first sentence",
+      "typingCapturesMs": [
+        0,
+        180,
+        420,
+        800,
+        1300,
+        1700
+      ],
+      "largeFontDragDoesNotAdvance": true,
+      "routesBackAndBothPagersPassed": true,
+      "slotPagerBothDirectionsPassed": true,
+      "cgGroupsAndGalleryPagersPassed": true,
+      "physicalDeviceTested": false,
+      "typingInkCounts": [
+        1602,
+        798,
+        1390,
+        2677,
+        3763,
+        3763
+      ],
+      "fullTextInkPerLine": [
+        1007,
+        1493,
+        1263
+      ],
+      "typedRowsVisuallyComplete": true,
+      "illustrativeRadiusPx": 80,
+      "cornerTextInk": {
+        "routes": {
+          "before": 1,
+          "after": 0
+        },
+        "slots": {
+          "before": 2,
+          "after": 0
+        },
+        "reading": {
+          "before": 0,
+          "after": 0
+        }
+      },
+      "radiusNote": "R80 is a conservative illustrative mask, not a calibration of the physical watch. Art is intentionally full bleed; reading comparison measures only dialogue/control regions."
+    }
+  },
+  "validationNote": "Current version verifies rounded-corner layout, toolbar/pagers, native typing at Murasame 6-2, explicit newline display, long text drag, routes, gallery, sound toggle, skip and same-device cold save slots 1/30. Complete OP, pixel alignment and music loops were run on 0.1.8 and are not claimed as rerun on 0.1.9; see inherited SHA and exact media/controller/viewport equivalence audit. R80 mask is illustrative, not physical-device calibration. An initial cold-check request preceded controller readiness; its connection-refused log is retained and is not counted as a successful app check."
+}

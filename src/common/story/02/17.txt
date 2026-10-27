@@ -1,0 +1,1 @@
+[{"speaker":"","text":"然后我就这么一直给小雨喂芭菲，直到她满足为止。","art":{"background":"/common/images/22/05.jpg","sprites":[]}},{"speaker":"","text":"……不，她吃完了整杯芭菲都还觉得不满足，甚至还跟我抱怨量太少呢。","art":{"background":"/common/images/22/05.jpg","sprites":[]}}]

@@ -1,0 +1,1 @@
+[{"speaker":"将臣","text":"「……」","art":{"background":"/common/images/50/19.jpg","sprites":[]}},{"speaker":"","text":"这让我感到有些寂寞。","art":{"background":"/common/images/50/19.jpg","sprites":[]}}]

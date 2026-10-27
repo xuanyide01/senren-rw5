@@ -1,0 +1,38 @@
+{
+  "package": "com.codex.senren.rw5",
+  "name": "千恋万花",
+  "versionName": "0.1.9",
+  "versionCode": 10,
+  "minPlatformVersion": 1000,
+  "minAPILevel": 1,
+  "icon": "/common/logo.png",
+  "deviceTypeList": [
+    "watch"
+  ],
+  "features": [
+    {
+      "name": "system.storage"
+    },
+    {
+      "name": "system.file"
+    },
+    {
+      "name": "system.prompt"
+    },
+    {
+      "name": "system.audio"
+    }
+  ],
+  "config": {
+    "designWidth": 432,
+    "logLevel": "log"
+  },
+  "router": {
+    "entry": "pages/index",
+    "pages": {
+      "pages/index": {
+        "component": "index"
+      }
+    }
+  }
+}
