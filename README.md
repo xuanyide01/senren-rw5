@@ -72,9 +72,9 @@ python tools/audit-package.py
 
 ## 当前界面预览
 
-| 标题 | 后日谈 | 正文渲染 |
-| --- | --- | --- |
-| ![标题](docs/screenshots/v0.1.13/title.png) | ![后日谈](docs/screenshots/v0.1.13/after-story-locked.png) | ![正文](docs/screenshots/v0.1.13/text-render-fix.png) |
+| 标题 | 后日谈 |
+| --- | --- |
+| ![标题](docs/screenshots/v0.1.13/title.png) | ![后日谈](docs/screenshots/v0.1.13/after-story-locked.png) |
 
 ## 联系方式
 
