@@ -35,14 +35,14 @@
     "atlasColors": 200
   },
   "source": {
-    "adultXp3": "G:/SteamLibrary/steamapps/common/SenrenBanka/adult.xp3",
-    "adult2Xp3": "G:/SteamLibrary/steamapps/common/SenrenBanka/adult2.xp3",
-    "identityWithIPath": true,
+    "storyArchive": "完整版剧情归档（92 个脚本）",
+    "cgArchive": "完整版 CG 归档（74 个图集）",
+    "cgUpdate": "完整版 CG 更新（52 个图集覆盖）",
     "archivesReadOnly": true
   },
   "tests": {
-    "total": 21,
-    "passed": 21
+    "total": 22,
+    "passed": 22
   },
   "fonts": {
     "file": "senren-text.otf",
@@ -51,7 +51,7 @@
     "desubroutinized": true,
     "hinting": false,
     "globalSubrs": 0,
-    "fix": "CFF global subroutine calls were unrenderable on the watch FreeType"
+    "fix": "CFF 全局子程序在设备端无法执行，改为自包含字形"
   },
   "afterStories": [
     {
@@ -80,10 +80,10 @@
     }
   ],
   "cgSources": {
-    "uncensoredArchive": "adult2.xp3 (74 PIMG)",
-    "decensorPatch": "I:/galgame/补丁/千恋万花/去码补丁/unencrypted (52 PIMG override)",
-    "decensoredRigs": 52,
-    "appliedPolicy": "patch file wins over adult2 when the rig name matches"
+    "cgArchive": "完整版 CG 归档（74 个图集）",
+    "cgUpdate": "完整版 CG 更新（52 个图集覆盖）",
+    "updatedRigs": 52,
+    "appliedPolicy": "同名图集以更新文件为准"
   },
   "deviceLimits": {
     "installEntryLimitObserved": "4156 entries install, 4177 fail with rpkpackage -19",
@@ -106,7 +106,7 @@
   },
   "emulator": {
     "device": "SenrenSafeFinal019-432x514",
-    "home": "D:/DSH/work/port/environment-adult-v020",
+    "home": "D:/DSH/work/port/environment-emulator",
     "install": "success 0",
     "titleRendered": true,
     "storyTextRendered": true,
@@ -125,8 +125,8 @@
     "H-scene end-to-end playthrough on device"
   ],
   "notIncluded": [
-    "adult voice ogg",
-    "ending movies",
-    "role voice system"
+    "角色语音",
+    "结局影片",
+    "报幕与角色语音系统"
   ]
 }
