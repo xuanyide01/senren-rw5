@@ -1,0 +1,14 @@
+{
+  "groups": 122,
+  "variants": 1479,
+  "skippedGroups": [
+    [
+      "thum_NE",
+      "廉ED"
+    ]
+  ],
+  "sourceLists": [
+    "D:\\codex\\2026-10-26\\senren-rw5\\probe\\extracted\\data\\main\\cglist.csv.utf8.txt",
+    "D:\\DSH\\work\\port\\probe\\extracted\\adult\\cglist_0.csv.utf8.txt"
+  ]
+}

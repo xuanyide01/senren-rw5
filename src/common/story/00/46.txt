@@ -1,0 +1,1 @@
+[{"speaker":"将臣","text":"「嗯，要论生活的便利程度当然是城市更好吧」","art":{"background":"/common/images/284/01.jpg","sprites":[]}},{"speaker":"将臣","text":"「各方面都方便得多。主要是，我是在城里出生长大的」","art":{"background":"/common/images/284/01.jpg","sprites":[]}},{"speaker":"将臣","text":"「但是！这不代表我讨厌这里的生活！」","art":{"background":"/common/images/284/01.jpg","sprites":[]}}]

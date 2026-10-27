@@ -1,0 +1,45 @@
+{
+  "result": "compiled-intermediate",
+  "sourceArchives": [
+    "adult",
+    "adult2"
+  ],
+  "scripts": 92,
+  "nodes": 869,
+  "newNodes": 369,
+  "texts": 55726,
+  "choiceOptions": 97,
+  "imageRequests": 4548,
+  "maxVisibleSprites": 5,
+  "openingNodes": [
+    "n18"
+  ],
+  "omittedEndingMovies": [
+    {
+      "scene": "n559",
+      "order": 0
+    },
+    {
+      "scene": "n270",
+      "order": 0
+    },
+    {
+      "scene": "n349",
+      "order": 0
+    },
+    {
+      "scene": "n410",
+      "order": 0
+    },
+    {
+      "scene": "n488",
+      "order": 0
+    },
+    {
+      "scene": "n499",
+      "order": 0
+    }
+  ],
+  "warnings": [],
+  "warningCount": 0
+}
