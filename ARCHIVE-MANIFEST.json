@@ -1,0 +1,146 @@
+{
+  "archived_at": "2026-11-01",
+  "repository": "xuanyide01/senren-rw5",
+  "versions": [
+    {
+      "tag": "v0.1.0",
+      "files": [
+        {
+          "name": "千恋万花-REDMI-Watch-5-0.1.0-source.zip",
+          "bytes": 23989182,
+          "sha256": "f097b7631a42bc980ad25be8418fe50d0f847b505f3eff88cd68258551181761"
+        },
+        {
+          "name": "千恋万花-REDMI-Watch-5-0.1.0.bin",
+          "bytes": 22916433,
+          "sha256": "6926472f886094c8e8f015c91147f4f136782e7dac7522083fd4b9b149dfb604"
+        },
+        {
+          "name": "千恋万花-REDMI-Watch-5-0.1.0.rpk",
+          "bytes": 22916433,
+          "sha256": "6926472f886094c8e8f015c91147f4f136782e7dac7522083fd4b9b149dfb604"
+        }
+      ]
+    },
+    {
+      "tag": "v0.1.1",
+      "files": [
+        {
+          "name": "千恋万花-REDMI-Watch-5-0.1.1-source.zip",
+          "bytes": 23829379,
+          "sha256": "286638d09cdef89f8bd5f5e593a5ed4e7fca42c1b5b215f878ea0d9b6c5d9633"
+        },
+        {
+          "name": "千恋万花-REDMI-Watch-5-0.1.1.bin",
+          "bytes": 23075905,
+          "sha256": "77008ca540dc9c95b088262419c17173df5e3941b647962def21e29167c09de3"
+        },
+        {
+          "name": "千恋万花-REDMI-Watch-5-0.1.1.rpk",
+          "bytes": 23075905,
+          "sha256": "77008ca540dc9c95b088262419c17173df5e3941b647962def21e29167c09de3"
+        }
+      ]
+    },
+    {
+      "tag": "v0.1.2",
+      "files": [
+        {
+          "name": "千恋万花-REDMI-Watch-5-0.1.2-source.zip",
+          "bytes": 25815367,
+          "sha256": "c236c959fd6e14c84e5b4ff1b44b4144a69a9607b34ed5b34c7e28097d994a1a"
+        },
+        {
+          "name": "千恋万花-REDMI-Watch-5-0.1.2.bin",
+          "bytes": 24984049,
+          "sha256": "add376302e616165b4b0c39224b815bba856b07d3f496aeb3e3c001642bc08fc"
+        },
+        {
+          "name": "千恋万花-REDMI-Watch-5-0.1.2.rpk",
+          "bytes": 24984049,
+          "sha256": "add376302e616165b4b0c39224b815bba856b07d3f496aeb3e3c001642bc08fc"
+        }
+      ]
+    },
+    {
+      "tag": "v0.1.3",
+      "files": [
+        {
+          "name": "千恋万花-REDMI-Watch-5-0.1.3-source.zip",
+          "bytes": 25783611,
+          "sha256": "da00a7f4de020c494bfb243a95231bcfb95e364440bfb0b99362d05f69d24e18"
+        },
+        {
+          "name": "千恋万花-REDMI-Watch-5-0.1.3.bin",
+          "bytes": 24947297,
+          "sha256": "95e79445096bf2e7494ebc832b3041185f8a0297822b19ffb378639405b81e2e"
+        },
+        {
+          "name": "千恋万花-REDMI-Watch-5-0.1.3.rpk",
+          "bytes": 24947297,
+          "sha256": "95e79445096bf2e7494ebc832b3041185f8a0297822b19ffb378639405b81e2e"
+        }
+      ]
+    },
+    {
+      "tag": "v0.1.4",
+      "files": [
+        {
+          "name": "千恋万花-REDMI-Watch-5-0.1.4-source.zip",
+          "bytes": 25887823,
+          "sha256": "cf3826df913f222ba5f2f58cb05a7084cd73346a143291e8a257e03e7046237f"
+        },
+        {
+          "name": "千恋万花-REDMI-Watch-5-0.1.4.bin",
+          "bytes": 24999121,
+          "sha256": "b045d1ab667352459ae2ad7efc4c6ae29878ef9293d74cb605a99ade113e702a"
+        },
+        {
+          "name": "千恋万花-REDMI-Watch-5-0.1.4.rpk",
+          "bytes": 24999121,
+          "sha256": "b045d1ab667352459ae2ad7efc4c6ae29878ef9293d74cb605a99ade113e702a"
+        }
+      ]
+    },
+    {
+      "tag": "v0.1.6",
+      "files": [
+        {
+          "name": "千恋万花-REDMI-Watch-5-0.1.6-source.zip",
+          "bytes": 26062063,
+          "sha256": "bd741103c919ee3bf403973c24e292659ff1efec72c5fbbe9e28936fefb1dc8b"
+        },
+        {
+          "name": "千恋万花-REDMI-Watch-5-0.1.6.bin",
+          "bytes": 24985041,
+          "sha256": "4739c2979b57c63da5952f2a31ffe50eff1044608f3b91765c73121ede10230c"
+        },
+        {
+          "name": "千恋万花-REDMI-Watch-5-0.1.6.rpk",
+          "bytes": 24985041,
+          "sha256": "4739c2979b57c63da5952f2a31ffe50eff1044608f3b91765c73121ede10230c"
+        }
+      ]
+    },
+    {
+      "tag": "v0.1.8",
+      "files": [
+        {
+          "name": "千恋万花-REDMI-Watch-5-0.1.8-source.zip",
+          "bytes": 25976601,
+          "sha256": "55a487d85dcd721c657624b3cedb23aaefd9c1f96a29915b38d95b9e061eace0"
+        },
+        {
+          "name": "千恋万花-REDMI-Watch-5-0.1.8.bin",
+          "bytes": 24935281,
+          "sha256": "5a5b117eea0bf4367c88a4555bd5c33eb9e14243ba59c80d702276f6915767b4"
+        },
+        {
+          "name": "千恋万花-REDMI-Watch-5-0.1.8.rpk",
+          "bytes": 24935281,
+          "sha256": "5a5b117eea0bf4367c88a4555bd5c33eb9e14243ba59c80d702276f6915767b4"
+        }
+      ]
+    }
+  ]
+}
